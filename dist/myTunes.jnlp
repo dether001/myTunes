@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="myTunes.jnlp">
+  <information>
+    <title>myTunes</title>
+    <vendor>Mape</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\jaudiotagger-2.2.6-SNAPSHOT.jar" size="1131113" download="eager" />
+    <jar href="lib\sqljdbc42.jar" size="891490" download="eager" />
+    <jar href="myTunes.jar" size="53480" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="myTunes" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mytunes.MyTunes"  name="myTunes" />
+  <update check="always"/>
+</jnlp>
